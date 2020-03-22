@@ -21,10 +21,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     # Include asciidoctor-action and run the cli tool
-    - uses: mgred/asciidoctor-action@master
+    - name: Get build container
+      id: adocbuild
+      uses: avattathil/asciidoctor-action@master
       with:
-        # args: asciidoctor index.adoc
-        args: ls -la
+          program: "asciidoctor --backend=html5 -o index.html index.adoc"
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
