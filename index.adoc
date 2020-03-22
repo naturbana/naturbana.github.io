@@ -44,12 +44,13 @@ Sensor de partículas en suspensión SDS011
 El Sensor SDS011 funciona haciendo circular el aire a través de un sensor laser y midiendo las desviaciones del laser debidas a las partículas en suspension.
 Es capaz de medir tanto partículas de 2.5µm como de 10µm que son unos de los principales contaminantes del aire.
 
-image:fotos/SDS011-FRONT.jpg[SDS011] image:fotos/SDS011-BACK.jpg[SDS011]
+image:fotos/SDS011-FRONT.jpg["SDS011", width=384]
+image:fotos/SDS011-BACK.jpg["SDS011", width=384]
 
 Microcontrolador NodeMCU v3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-El microcontrolador NodeMCU v3, es el encargado de leer los datos de los sensores y enviarlos por internet a los servidores donde poder almacenarlos y asi poder analizarlos.
+El microcontrolador NodeMCU v3, es el encargado de leer los datos de los sensores y enviarlos por internet a los servidores donde poder almacenarlos y así poder analizarlos.
 Funciona a 80Mhz, tiene 4Mb de memoria, y es capaz de conectarse a redes wifi.
 
 image:fotos/NodeMCUv3-FRONT.jpg["NodeMCU V3",width=384]
@@ -130,7 +131,7 @@ image:fotos/SDS011-2.jpg["SDS011",width=256]
 Comprobación de las conexiones
 ++++++++++++++++++++++++++++++
 
-IMPORTANT: Es *muy importante* revisar que las conexiones que hemos hecho son correctas y que cada cable une los pines indicados. Asi que revisa una vez mas las conexiones antes de encender el equipo por primera vez, sino corres el riesgo de que algún componente pueda estropearse.
+IMPORTANT: Es *muy importante* revisar que las conexiones que hemos hecho son correctas y que cada cable une los pines indicados. Así que revisa una vez mas las conexiones antes de encender el equipo por primera vez, sino corres el riesgo de que algún componente pueda estropearse.
 
 image:fotos/Ensamblaje-1.jpg["Ensamblaje",width=256]
 image:fotos/Ensamblaje-2.jpg["Ensamblaje",width=256]
@@ -139,7 +140,7 @@ Una vez hayamos revisado las conexiones vamos a poner en marcha el dispositivo p
 
 Para ello vamos a seguir los siguientes pasos:
 
-1. Enchufamos el cable usb en el Microcontrolador, luego en al fuente de alimentación, y por ultimo en chufamos la fuente de alimentación en un enchufe de la pared.
+1. Enchufamos el cable USB en el Microcontrolador, luego en al fuente de alimentación, y por ultimo en chufamos la fuente de alimentación en un enchufe de la pared.
 2. Esperamos 20 segundos.
 3. Con un ordenador o teléfono buscamos un ref wifi que se llame "Naturbana-xxxxxx" (siendo xxxxxx dígitos), nos conectamos a ella.
 4. Abrimos el navegador (Chrome, Firefox, etc) y en la barra de direcciones ponemos <http://192.168.4.1/> para acceder al menú de configuración de nuestro sensor de calidad del aire.
@@ -249,10 +250,10 @@ Para poder poner nuestro sensor de calidad del aire en el exterior deberemos pro
 Para ello vamos a meterlo en un caja construida con 2 codos de tubería, siguiendo estos pasos:
 
 1. Poner en el sensor de partículas el tubo transparente de 6mm.
-2. Usando una brida plástica, Unir el sensor de partículas y el microcontrolador pasando la brida por el orificio del sensor que está mar cercano a los pines y por el orificio del microcontrolador mas cercano al puerto usb como se ve en la foto: [red yellow-background]#PONER FOTO#
-3. Desconectar el cable usb de la fuente de alimentación y conectarlo al microcontrolador.
+2. Usando una brida plástica, Unir el sensor de partículas y el microcontrolador pasando la brida por el orificio del sensor que está mar cercano a los pines y por el orificio del microcontrolador mas cercano al puerto USB como se ve en la foto: [red yellow-background]#PONER FOTO#
+3. Desconectar el cable USB de la fuente de alimentación y conectarlo al microcontrolador.
 4. Introducir el conjunto y fijarlo al interior de la tubería usando cinta doble cara.
-5. Asegurarse que el tubo transparente asoma por una de las aberturas de la caja y que el sensor de temperatura esta cerca de la salida, pero no asoma de la otra abertura. El cable usb debe salir por una de los extremos.
+5. Asegurarse que el tubo transparente asoma por una de las aberturas de la caja y que el sensor de temperatura esta cerca de la salida, pero no asoma de la otra abertura. El cable USB debe salir por una de los extremos.
 6. Sellar las 2 tubería usando 2 o 3 vueltas de la cinta de embalar.
 7. Fijar todo el conjunto en el exterior en alguna ventana o balcón que este cerca de un enchufe para poder conectar en el cable usb a la fuente de alimentación y esta al enchufe.
 
