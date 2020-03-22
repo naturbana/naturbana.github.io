@@ -1,0 +1,12 @@
+Naturbana Partículas
+====================
+:icons: font
+
+Cómo Funciona
+-------------
+
+El sensor de contaminación "Naturbana Particulas", tiene un funcionamiento sencillo. +
+El microcontrolador, que funciona como un pequeño ordenador, se encarga cada 145 segundos recabar la información de los diferentes sensores,
+procesarla y enviarla a través de internet a las diferentes plataformas de seguimiento de esta información.
+
+Luego conectándonos a esas plataformas podemos hacer seguimiento de los datos recabados tanto de los valores en bruto como en forma de gráficos.
