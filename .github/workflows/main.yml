@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request 
+# Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
@@ -23,7 +23,8 @@ jobs:
     # Include asciidoctor-action and run the cli tool
     - uses: mgred/asciidoctor-action@master
       with:
-        args: asciidoctor index.adoc
+        # args: asciidoctor index.adoc
+        args: ls -la
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
