@@ -35,7 +35,7 @@ Sensor de temperatura, humedad y presión atmosférica BME280
 
 Este pequeño sensor integra 3 componentes y es capaz de medir la temperatura, la humedad relativa del aire y la presión atmosférica.
 
-[red yellow-background]#PONER FORO#
+[red yellow-background]#PONER FOTO#
 image:fotos/BME280.jpg["BME280",width=256]
 
 Sensor de partículas en suspensión SDS011
