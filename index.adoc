@@ -277,7 +277,7 @@ Debemos conectar Sensator en un lugar que cumpla los siguientes requisitos:
 - Tener un enchufe cercano protegido de la lluvia.
 - Tener una cobertura WiFi aceptable
 
-Por ejemplo, una ventana que tenga rejas, ya que podemos usar las bridas incluidas para anclarlo a las rejas.
+Por ejemplo, una ventana que tenga rejas, ya que podemos usar las bridas incluidas para anclarlo a las rejas y es muy posible que tengas un enchufe cerca en el interior del edificio.
 
 == Cómo consultar las mediciones
 
