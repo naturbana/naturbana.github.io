@@ -177,23 +177,23 @@ image:station_id.png[width=256]
 
 En la sección "Configuración WiFi" ponemos el nombre la red WiFi y la contraseña. *No modificamos ningún otro valor* y pulsamos el botón "Guardar y reiniciar".
 
-El microcontrolador se reiniciará y, si hemos configurado el WiFi correctamente, empezará a hacer mediciones, *que una vez hayamos registrado el sensor* (ver paso siguiente), podremos consultar en https://maps.sensor.community/#13/40.4348/-3.6664[el mapa de Sensor Community] (los datos tardan unos 5 minutos aproximadamente en aparecer en el mapa).
+El microcontrolador se reiniciará y, si hemos configurado el WiFi correctamente, empezará a hacer mediciones, *que una vez hayamos registrado el sensor* (ver paso siguiente), podremos consultar en https://maps.sensor.community/#13/40.4348/-3.6664[el mapa de Sensor Community, window="_blank"] (los datos tardan unos 5 minutos aproximadamente en aparecer en el mapa).
 
 ==== Registro
 
 Nuestro sensor va a enviar información sobre las partículas en suspension, la temperatura, la humedad y la presión atmosférica a varios servicios, gestionados por asociaciones sin ánimo de lucro, que intentan hacer esta información mas transparente en base a usuarios como vosotros que la comparten.
 Estos servicios son:
 
-- https://sensor.community/en/[Sensor.Community]
-- https://grafana.naturbana.org/[Naturbana]
+- https://sensor.community/en/[Sensor.Community, window="_blank"]
+- https://grafana.naturbana.org/[Naturbana, window="_blank"]
 
 Tenemos que registrar nuestro sensor en cada uno de estos servicios.
 
 ===== Registro en Sensor.Community
 Sensor.Community -antes llamada luftdaten.info- es un proyecto creado por OK Lab Stuttgart para promover el desarrollo transparente, los datos abiertos y la ciencia ciudadana.
 
-Para registrar nuestro sensor primero tenemos que registrar una cuenta en este sencillo formulario: https://my.luftdaten.info/register
-Una vez hayamos verificado la cuenta con el email que nos envían tenemos que acceder a través de https://my.luftdaten.info/login.
+Para registrar nuestro sensor primero tenemos que registrar una cuenta en este sencillo formulario: https://my.luftdaten.info/register[window="_blank"].
+Una vez hayamos verificado la cuenta con el email que nos envían tenemos que acceder a través de https://my.luftdaten.info/login[window="_blank"].
 Allí pulsamos en "Register new sensor" y vamos rellenando el formulario como se indica a continuación:
 
 *Sensor registration*
@@ -235,7 +235,7 @@ Aquí hay que poner las coordenadas (latitud y longitud) donde se encuentra el s
 
 Por último pulsamos "Save settings" para guardar toda la información que hemos metido.
 
-A partir de este momento nuestro sensor ha quedado registrado en Sensor.Community y aparecerá en https://maps.sensor.community/#13/40.4348/-3.6664[los mapas] con su información actualizada.
+A partir de este momento nuestro sensor ha quedado registrado en Sensor.Community y aparecerá en https://maps.sensor.community/#13/40.4348/-3.6664[los mapas, window="_blank"] con su información actualizada.
 
 
 ===== Registro en Naturbana
@@ -290,7 +290,7 @@ Ahora que ya tenemos nuestro sensor de partículas funcionando vamos a ver como 
 La web de Sensor.Community nos permite ver los datos en el Mapa, y en la session My Sensors de nuestro area personal.
 Además nos podemos descargar esa información en formato `csv` desde la dirección +\https://archive.luftdaten.info/YYYY-MM-DD/YYYY-MM-DD_{modelo_de_sensor}_sensor_{id_del_sensor}.csv+
 
-Por ejemplo: https://archive.luftdaten.info/2020-03-13/2020-03-13_sds011_sensor_43556.csv
+Por ejemplo: https://archive.luftdaten.info/2020-03-13/2020-03-13_sds011_sensor_43556.csv[window="_blank"]
 
 === Desde Naturbana
 
