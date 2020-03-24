@@ -271,7 +271,7 @@ Para ello vamos a meterlo en un caja construida con 2 codos de tubería, siguien
 === Colocación
 
 
-El sensor debemos conectar en un lugar que cumpla los siguientes requisitos:
+Debemos conectar Sensator en un lugar que cumpla los siguientes requisitos:
 
 - Estar en el exterior, preferiblemente a la sombra.
 - Tener un enchufe cercano protegido de la lluvia.
