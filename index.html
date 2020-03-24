@@ -5,7 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>Naturbana Partículas</title>
+<meta name="description" content="Manual para la construcción, registro e instalación de un sensor de contaminación "Naturbana partículas"">
+<meta name="author" content="Author Name">
+<title>Sensator</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,22 +441,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Naturbana Partículas</h1>
+<h1>Sensator</h1>
+<div class="details">
+<span id="author" class="author">Author Name</span><br>
+<span id="email" class="email"><a href="mailto:contacto@naturbana.org">contacto@naturbana.org</a></span><br>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_cómo_funciona">Cómo Funciona</h2>
+<h2 id="seccion_cómo_funciona">1. Cómo Funciona</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>El sensor de contaminación "Naturbana Particulas", tiene un funcionamiento sencillo.<br>
-El microcontrolador, que funciona como un pequeño ordenador, se encarga cada 145 segundos recabar la información de los diferentes sensores,
-procesarla y enviarla a través de internet a las diferentes plataformas de seguimiento de esta información.</p>
+<p>“Sensator” es un sensor de contaminación aérea que detecta micro-partículas de 2.5µm y de 10µm, que son los principales contaminantes no gaseosos del aire que respiramos; también mide la temperatura y humedad del aire.</p>
 </div>
 <div class="paragraph">
-<p>Luego conectándonos a esas plataformas podemos hacer seguimiento de los datos recabados tanto de los valores en bruto como en forma de gráficos.</p>
+<p>Producido por la Asociación Naturbana para su uso experimental en colegios e Institutos, este microcontrolador funciona como un pequeño ordenador: cada 145 segundos recaba la información de los diferentes sensores, la procesa y luego la envía a través de internet a las diferentes plataformas de seguimiento de esta información.</p>
+</div>
+<div class="paragraph">
+<p>Luego -conectándonos a esas plataformas- podemos hacer seguimiento de los datos recabados, tanto de los valores en bruto como en forma de gráficos.</p>
 </div>
 <div class="sect2">
-<h3 id="_partes">Partes</h3>
+<h3 id="seccion_partes">1.1. Partes</h3>
 <div class="paragraph">
 <p>El sensor de calidad del aire Naturbana Partículas, está formado por 4 módulos:</p>
 </div>
@@ -478,17 +485,17 @@ procesarla y enviarla a través de internet a las diferentes plataformas de segu
 <p>Vamos a conocer un poco mas sobre cada uno de ellos.</p>
 </div>
 <div class="sect3">
-<h4 id="_fuente_de_alimentación">Fuente de alimentación</h4>
+<h4 id="seccion_fuente_de_alimentación">1.1.1. Fuente de alimentación</h4>
 <div class="paragraph">
 <p>La fuente de alimentación se encarga de proporcionar al resto de elementos la energía necesaria para funcionar.
-Para este proyecto usaremos como fuente de alimentación un cargador USB de los que se usan para los teléfonos móviles.</p>
+En este equipo usaremos como fuente de alimentación un cargador USB de los que se usan para los teléfonos móviles.</p>
 </div>
 <div class="paragraph">
 <p><span class="red yellow-background">PONER FOTO</span></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sensor_de_temperatura_humedad_y_presión_atmosférica_bme280">Sensor de temperatura, humedad y presión atmosférica BME280</h4>
+<h4 id="seccion_sensor_de_temperatura_humedad_y_presión_atmosférica_bme280">1.1.2. Sensor de temperatura, humedad y presión atmosférica BME280</h4>
 <div class="paragraph">
 <p>Este pequeño sensor integra 3 componentes y es capaz de medir la temperatura, la humedad relativa del aire y la presión atmosférica.</p>
 </div>
@@ -498,7 +505,7 @@ Para este proyecto usaremos como fuente de alimentación un cargador USB de los 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sensor_de_partículas_en_suspensión_sds011">Sensor de partículas en suspensión SDS011</h4>
+<h4 id="seccion_sensor_de_partículas_en_suspensión_sds011">1.1.3. Sensor de partículas en suspensión SDS011</h4>
 <div class="paragraph">
 <p>El Sensor SDS011 funciona haciendo circular el aire a través de un sensor laser y midiendo las desviaciones del laser debidas a las partículas en suspension.
 Es capaz de medir tanto partículas de 2.5µm como de 10µm que son unos de los principales contaminantes del aire.</p>
@@ -509,10 +516,10 @@ Es capaz de medir tanto partículas de 2.5µm como de 10µm que son unos de los 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_microcontrolador_nodemcu_v3">Microcontrolador NodeMCU v3</h4>
+<h4 id="seccion_microcontrolador_nodemcu_v3">1.1.4. Microcontrolador NodeMCU v3</h4>
 <div class="paragraph">
 <p>El microcontrolador NodeMCU v3, es el encargado de leer los datos de los sensores y enviarlos por internet a los servidores donde poder almacenarlos y así poder analizarlos.
-Funciona a 80Mhz, tiene 4Mb de memoria, y es capaz de conectarse a redes wifi.</p>
+Funciona a 80Mhz, tiene 4Mb de memoria, y es capaz de conectarse a redes WiFi.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="fotos/NodeMCUv3-FRONT.jpg" alt="NodeMCU V3" width="384"></span>
@@ -523,10 +530,10 @@ Funciona a 80Mhz, tiene 4Mb de memoria, y es capaz de conectarse a redes wifi.</
 </div>
 </div>
 <div class="sect1">
-<h2 id="_construcción">Construcción</h2>
+<h2 id="seccion_construcción">2. Construcción</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_partes_2">Partes</h3>
+<h3 id="seccion_partes_2">2.1. Partes</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -569,9 +576,9 @@ Funciona a 80Mhz, tiene 4Mb de memoria, y es capaz de conectarse a redes wifi.</
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ensamblaje">Ensamblaje</h3>
+<h3 id="seccion_ensamblaje">2.2. Ensamblaje</h3>
 <div class="sect3">
-<h4 id="_conectar_los_componentes">Conectar los componentes</h4>
+<h4 id="seccion_conectar_los_componentes">2.2.1. Conectar los componentes</h4>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -591,7 +598,7 @@ Para conectar los componentes es importante que el microcontrolador no esté con
 <p>Estos pines vienen con un código de 2 o 3 letras escrito a su lado que indica su función.</p>
 </div>
 <div class="sect4">
-<h5 id="_conectar_sensor_de_temperatura_humedad_y_presión_atmosférica_bme280">Conectar Sensor de temperatura, humedad y presión atmosférica BME280</h5>
+<h5 id="seccion_conectar_sensor_de_temperatura_humedad_y_presión_atmosférica_bme280">Conectar Sensor de temperatura, humedad y presión atmosférica BME280</h5>
 <div class="paragraph">
 <p>Separamos de la tira de cables <em>dupont</em> un grupo de 4 cables y fijándonos en los nombres de los <em>pines</em>, conectamos el sensor al microcontrolador de la siguiente forma:</p>
 </div>
@@ -632,7 +639,7 @@ Para conectar los componentes es importante que el microcontrolador no esté con
 </div>
 </div>
 <div class="sect4">
-<h5 id="_conectar_el_sensor_de_partículas_en_suspensión_sds011">Conectar el Sensor de partículas en suspensión SDS011</h5>
+<h5 id="seccion_conectar_el_sensor_de_partículas_en_suspensión_sds011">Conectar el Sensor de partículas en suspensión SDS011</h5>
 <div class="paragraph">
 <p>De forma similar al paso anterior, separamos un grupo de 4 cables y fijándonos en los nombres de los <em>pines</em>, conectamos el sensor de partículas al microcontrolador de la siguiente forma:</p>
 </div>
@@ -675,7 +682,7 @@ Para conectar los componentes es importante que el microcontrolador no esté con
 </div>
 </div>
 <div class="sect4">
-<h5 id="_comprobación_de_las_conexiones">Comprobación de las conexiones</h5>
+<h5 id="seccion_comprobación_de_las_conexiones">Comprobación de las conexiones</h5>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -701,13 +708,13 @@ Es <strong>muy importante</strong> revisar que las conexiones que hemos hecho so
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Enchufamos el cable USB en el Microcontrolador, luego en al fuente de alimentación, y por ultimo en chufamos la fuente de alimentación en un enchufe de la pared.</p>
+<p>Enchufamos el cable USB en el Microcontrolador, luego en al fuente de alimentación, y por ultimo enchufamos la fuente de alimentación en un enchufe de la pared.</p>
 </li>
 <li>
 <p>Esperamos 20 segundos.</p>
 </li>
 <li>
-<p>Con un ordenador o teléfono buscamos un ref wifi que se llame "Naturbana-xxxxxx" (siendo xxxxxx dígitos), nos conectamos a ella.</p>
+<p>Con un ordenador o teléfono buscamos un ref WiFi que se llame "Naturbana-xxxxxx" (siendo xxxxxx dígitos), nos conectamos a ella.</p>
 </li>
 <li>
 <p>Abrimos el navegador (Chrome, Firefox, etc) y en la barra de direcciones ponemos <a href="http://192.168.4.1/" class="bare">http://192.168.4.1/</a> para acceder al menú de configuración de nuestro sensor de calidad del aire.</p>
@@ -791,7 +798,7 @@ Es <strong>muy importante</strong> revisar que las conexiones que hemos hecho so
 </div>
 </div>
 <div class="sect4">
-<h5 id="_configuración">Configuración</h5>
+<h5 id="seccion_configuración">Configuración</h5>
 <div class="paragraph">
 <p>Una vez hayamos comprobado que todo funciona correctamente podemos proceder a configurar la conexión a internet de nuestro sensor.</p>
 </div>
@@ -806,11 +813,12 @@ Es <strong>muy importante</strong> revisar que las conexiones que hemos hecho so
 <p>En la sección "Configuración WiFi" ponemos el nombre la red WiFi y la contraseña. <strong>No modificamos ningún otro valor</strong> y pulsamos el botón "Guardar y reiniciar".</p>
 </div>
 <div class="paragraph">
-<p>El microcontrolador se reiniciará y, si hemos configurado el wifi correctamente, empezará a hacer mediciones, <strong>que una vez hayamos registrado el sensor</strong> (ver paso siguiente), podremos consultar en <a href="https://maps.sensor.community/#13/40.4348/-3.6664">el mapa de Sensor Community</a> (los datos tardan unos 5 minutos aproximadamente en aparecer en el mapa).</p>
+<p>El microcontrolador se reiniciará y, si hemos configurado el WiFi correctamente, empezará a hacer mediciones, <strong>que una vez hayamos registrado el sensor</strong> (ver paso siguiente), podremos consultar en <a href="https://maps.sensor.community/#13/40.4348/-3.6664">el mapa de Sensor Community</a> (los datos tardan unos 5 minutos aproximadamente en aparecer en el mapa).</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_registro">Registro</h5>
+</div>
+<div class="sect3">
+<h4 id="seccion_registro">2.2.2. Registro</h4>
 <div class="paragraph">
 <p>Nuestro sensor va a enviar información sobre las partículas en suspension, la temperatura, la humedad y la presión atmosférica a varios servicios, gestionados por asociaciones sin ánimo de lucro, que intentan hacer esta información mas transparente en base a usuarios como vosotros que la comparten.
 Estos servicios son:</p>
@@ -828,9 +836,8 @@ Estos servicios son:</p>
 <div class="paragraph">
 <p>Tenemos que registrar nuestro sensor en cada uno de estos servicios.</p>
 </div>
-</div>
 <div class="sect4">
-<h5 id="_registro_en_sensor_community">Registro en Sensor.Community</h5>
+<h5 id="seccion_registro_en_sensor_community">Registro en Sensor.Community</h5>
 <div class="paragraph">
 <p>Sensor.Community -antes llamada luftdaten.info- es un proyecto creado por OK Lab Stuttgart para promover el desarrollo transparente, los datos abiertos y la ciencia ciudadana.</p>
 </div>
@@ -845,10 +852,10 @@ Allí pulsamos en "Register new sensor" y vamos rellenando el formulario como se
 <div class="ulist">
 <ul>
 <li>
-<p><code>Sensor ID</code>: es el numero que apuntamos en el paso "Configuración"</p>
+<p>Sensor ID: es el numero que apuntamos en el paso "Configuración"</p>
 </li>
 <li>
-<p><code>Sensor Board</code>: Es el tipo de microcontrolador que estamos usando en nuestro caso un "esp8266"</p>
+<p>Sensor Board: Es el tipo de microcontrolador que estamos usando en nuestro caso un "esp8266"</p>
 </li>
 </ul>
 </div>
@@ -858,25 +865,25 @@ Allí pulsamos en "Register new sensor" y vamos rellenando el formulario como se
 <div class="ulist">
 <ul>
 <li>
-<p><code>Personal sensor name</code>: el nombre que queramos darle al sensor, por ejemplo "Ventana primer piso" o "Instituto Santamarca".</p>
+<p>Personal sensor name: el nombre que queramos darle al sensor, por ejemplo "Ventana primer piso" o "Instituto Santamarca".</p>
 </li>
 <li>
-<p><code>Street</code>: Nombre de la calle donde está ubicado el sensor.</p>
+<p>Street: Nombre de la calle donde está ubicado el sensor.</p>
 </li>
 <li>
-<p><code>Street number</code>: Número de la calle donde va a estar ubicado el sensor.</p>
+<p>Street number: Número de la calle donde va a estar ubicado el sensor.</p>
 </li>
 <li>
-<p><code>Indoor Sensor</code>: si el sensor va a estar ubicado en el interior, marcamos esta opción, si va a estar en el exterior la dejamos sin marcar.</p>
+<p>Indoor Sensor: si el sensor va a estar ubicado en el interior, marcamos esta opción, si va a estar en el exterior la dejamos sin marcar.</p>
 </li>
 <li>
-<p><code>Postal code</code>: Código postal donde va a estar ubicado el sensor.</p>
+<p>Postal code: Código postal donde va a estar ubicado el sensor.</p>
 </li>
 <li>
-<p><code>City</code>: Ciudad  donde va a estar ubicado el sensor.</p>
+<p>City: Ciudad  donde va a estar ubicado el sensor.</p>
 </li>
 <li>
-<p><code>Country</code>: País  donde va a estar ubicado el sensor.</p>
+<p>Country: País  donde va a estar ubicado el sensor.</p>
 </li>
 </ul>
 </div>
@@ -886,13 +893,13 @@ Allí pulsamos en "Register new sensor" y vamos rellenando el formulario como se
 <div class="ulist">
 <ul>
 <li>
-<p><code>Sensor level above ground (in cm)</code>: Altura <strong>en centímetros</strong> desde la calle (no altura sobre el nivel del mar)</p>
+<p>Sensor level above ground (in cm): Altura <strong>en centímetros</strong> desde la calle (no altura sobre el nivel del mar)</p>
 </li>
 <li>
-<p><code>Sensor location relative to the traffic</code>: indicamos como de lejos estamos del tráfico de coches: siendo 1 = en un jardín protegido del tráfico, y 10 = en el muro que da directamente a la calle.</p>
+<p>Sensor location relative to the traffic: indicamos como de lejos estamos del tráfico de coches: siendo 1 = en un jardín protegido del tráfico, y 10 = en el muro que da directamente a la calle.</p>
 </li>
 <li>
-<p><code>Short description of location</code>: Descripción del lugar, por ejemplo "En el patio de primaria".</p>
+<p>Short description of location: Descripción del lugar, por ejemplo "En el patio de primaria".</p>
 </li>
 </ul>
 </div>
@@ -906,10 +913,10 @@ Aquí tenemos que configurar los 2 sensores incluidos en nuestro equipo.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>Sensor Type</code>: tipo de sensor para medir partículas, en nuestro caso usamos un "SDS011".</p>
+<p>Sensor Type: tipo de sensor para medir partículas, en nuestro caso usamos un "SDS011".</p>
 </li>
 <li>
-<p><code>Pin</code>: 1</p>
+<p>Pin: 1</p>
 </li>
 </ul>
 </div>
@@ -919,10 +926,10 @@ Aquí tenemos que configurar los 2 sensores incluidos en nuestro equipo.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>Sensor Type</code>: tipo de sensor para medir temperatura y humedad, en nuestro caso usamos un "BME280".</p>
+<p>Sensor Type: tipo de sensor para medir temperatura y humedad, en nuestro caso usamos un "BME280".</p>
 </li>
 <li>
-<p><code>Pin</code>: 11</p>
+<p>Pin: 11</p>
 </li>
 </ul>
 </div>
@@ -938,14 +945,14 @@ Aquí hay que poner las coordenadas (latitud y longitud) donde se encuentra el s
 </div>
 </div>
 <div class="sect4">
-<h5 id="_registro_en_naturbana">Registro en Naturbana</h5>
+<h5 id="seccion_registro_en_naturbana">Registro en Naturbana</h5>
 <div class="paragraph">
 <p><span class="red yellow-background">TBD</span></p>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_caja_de_protección">Caja de protección</h4>
+<h4 id="seccion_caja_de_protección">2.2.3. Caja de protección</h4>
 <div class="paragraph">
 <p>Para poder poner nuestro sensor de calidad del aire en el exterior deberemos protegerlo y así evitar que las partes eléctricas puedan estropearse por la lluvia o el sol.</p>
 </div>
@@ -973,7 +980,7 @@ Aquí hay que poner las coordenadas (latitud y longitud) donde se encuentra el s
 <p>Sellar las 2 tubería usando 2 o 3 vueltas de la cinta de embalar.</p>
 </li>
 <li>
-<p>Fijar todo el conjunto en el exterior en alguna ventana o balcón que este cerca de un enchufe para poder conectar en el cable usb a la fuente de alimentación y esta al enchufe.</p>
+<p>Fijar todo el conjunto en el exterior en alguna ventana o balcón que este cerca de un enchufe para poder conectar en el cable USB a la fuente de alimentación y esta al enchufe.</p>
 </li>
 </ol>
 </div>
@@ -982,7 +989,7 @@ Aquí hay que poner las coordenadas (latitud y longitud) donde se encuentra el s
 </div>
 </div>
 <div class="sect3">
-<h4 id="_solucionar_problemas">Solucionar problemas</h4>
+<h4 id="seccion_solucionar_problemas">2.2.4. Solucionar problemas</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1023,17 +1030,17 @@ Aquí hay que poner las coordenadas (latitud y longitud) donde se encuentra el s
 </div>
 </div>
 <div class="sect2">
-<h3 id="_colocación">Colocación</h3>
+<h3 id="seccion_colocación">2.3. Colocación</h3>
 <div class="paragraph">
 <p>El sensor debemos conectar en un lugar que cumpla los siguientes requisitos:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Estar en el exterior</p>
+<p>Estar en el exterior, preferiblemente a la sombra.</p>
 </li>
 <li>
-<p>Tener un enchufe cercano para poder enchufarlo</p>
+<p>Tener un enchufe cercano protegido de la lluvia.</p>
 </li>
 <li>
 <p>Tener una cobertura WiFi aceptable</p>
@@ -1041,29 +1048,29 @@ Aquí hay que poner las coordenadas (latitud y longitud) donde se encuentra el s
 </ul>
 </div>
 <div class="paragraph">
-<p>El sitio mas típico es en una ventana que tenga rejas, ya que podemos usar las bridas incluidas para anclarlo a las rejas.</p>
+<p>Por ejemplo, una ventana que tenga rejas, ya que podemos usar las bridas incluidas para anclarlo a las rejas.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_cómo_consultar_las_mediciones">Cómo consultar las mediciones</h2>
+<h2 id="seccion_cómo_consultar_las_mediciones">3. Cómo consultar las mediciones</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Ahora que ya tenemos nuestro sensor de partículas funcionando vamos a ver como acceder a los datos que está recogiendo.</p>
 </div>
 <div class="sect2">
-<h3 id="_desde_sensor_community">Desde Sensor.Community</h3>
+<h3 id="seccion_desde_sensor_community">3.1. Desde Sensor.Community</h3>
 <div class="paragraph">
 <p>La web de Sensor.Community nos permite ver los datos en el Mapa, y en la session My Sensors de nuestro area personal.
-Ademas nos podemos descargar esa información en formato <code>csv</code> desde la dirección <code>https://archive.luftdaten.info/YYYY-MM-DD/YYYY-MM-DD_{modelo_de_sensor}_sensor_{id_del_sensor}.csv</code></p>
+Además nos podemos descargar esa información en formato <code>csv</code> desde la dirección \https://archive.luftdaten.info/YYYY-MM-DD/YYYY-MM-DD_{modelo_de_sensor}_sensor_{id_del_sensor}.csv</p>
 </div>
 <div class="paragraph">
 <p>Por ejemplo: <a href="https://archive.luftdaten.info/2020-03-13/2020-03-13_sds011_sensor_43556.csv" class="bare">https://archive.luftdaten.info/2020-03-13/2020-03-13_sds011_sensor_43556.csv</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_desde_naturbana">Desde Naturbana</h3>
+<h3 id="seccion_desde_naturbana">3.2. Desde Naturbana</h3>
 <div class="paragraph">
 <p><span class="red yellow-background">TBD</span></p>
 </div>
@@ -1071,7 +1078,7 @@ Ademas nos podemos descargar esa información en formato <code>csv</code> desde 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preguntas_frecuentes">Preguntas frecuentes</h2>
+<h2 id="seccion_preguntas_frecuentes">4. Preguntas frecuentes</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><span class="red yellow-background">TBD</span></p>
@@ -1081,7 +1088,7 @@ Ademas nos podemos descargar esa información en formato <code>csv</code> desde 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-22 21:29:22 UTC
+Last updated 2020-03-24 09:48:39 UTC
 </div>
 </div>
 </body>
