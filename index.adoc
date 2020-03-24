@@ -34,14 +34,12 @@ En este equipo usaremos como fuente de alimentación un cargador USB de los que 
 
 ==== Sensor de temperatura, humedad y presión atmosférica BME280
 
-
 Este pequeño sensor integra 3 componentes y es capaz de medir la temperatura, la humedad relativa del aire y la presión atmosférica.
 
 [red yellow-background]#PONER FOTO#
 image:BME280.jpg["BME280",width=256]
 
 ==== Sensor de partículas en suspensión SDS011
-
 
 El Sensor SDS011 funciona haciendo circular el aire a través de un sensor laser y midiendo las desviaciones del laser debidas a las partículas en suspension.
 Es capaz de medir tanto partículas de 2.5µm como de 10µm que son unos de los principales contaminantes del aire.
@@ -50,7 +48,6 @@ image:SDS011-FRONT.jpg["SDS011", width=384]
 image:SDS011-BACK.jpg["SDS011", width=384]
 
 ==== Microcontrolador NodeMCU v3
-
 
 El microcontrolador NodeMCU v3, es el encargado de leer los datos de los sensores y enviarlos por internet a los servidores donde poder almacenarlos y así poder analizarlos.
 Funciona a 80Mhz, tiene 4Mb de memoria, y es capaz de conectarse a redes WiFi.
@@ -78,9 +75,7 @@ image:NodeMCUv3-BACK.jpg["NodeMCU V3",width=384]
 
 === Ensamblaje
 
-
 ==== Conectar los componentes
-
 
 IMPORTANT: Para conectar los componentes es importante que el microcontrolador no esté conectado a la fuente de alimentación.
 
@@ -88,10 +83,7 @@ Todos los componentes tienen unos _pinchitos_ metálicos llamados _pines_ que se
 
 Estos pines vienen con un código de 2 o 3 letras escrito a su lado que indica su función.
 
-
 ===== Conectar Sensor de temperatura, humedad y presión atmosférica BME280
-
-
 
 Separamos de la tira de cables _dupont_ un grupo de 4 cables y fijándonos en los nombres de los _pines_, conectamos el sensor al microcontrolador de la siguiente forma:
 
@@ -108,9 +100,7 @@ image:BME280-1.jpg["BME280",width=256]
 image:BME280-2.jpg["BME280",width=256]
 image:BME280-3.jpg["BME280",width=256]
 
-
 ===== Conectar el Sensor de partículas en suspensión SDS011
-
 
 De forma similar al paso anterior, separamos un grupo de 4 cables y fijándonos en los nombres de los _pines_, conectamos el sensor de partículas al microcontrolador de la siguiente forma:
 
@@ -142,7 +132,7 @@ Para ello vamos a seguir los siguientes pasos:
 1. Enchufamos el cable USB en el Microcontrolador, luego en al fuente de alimentación, y por ultimo enchufamos la fuente de alimentación en un enchufe de la pared.
 2. Esperamos 20 segundos.
 3. Con un ordenador o teléfono buscamos un ref WiFi que se llame "Naturbana-xxxxxx" (siendo xxxxxx dígitos), nos conectamos a ella.
-4. Abrimos el navegador (Chrome, Firefox, etc) y en la barra de direcciones ponemos <http://192.168.4.1/> para acceder al menú de configuración de nuestro sensor de calidad del aire.
+4. Abrimos el navegador (Chrome, Firefox, etc) y en la barra de direcciones ponemos http://192.168.4.1/[windows="_blank"] para acceder al menú de configuración de nuestro sensor de calidad del aire.
 5. Si pulsamos en "Datos actuales" veremos un texto indicando cuanto tiempo falta para la primera lectura de datos ("Otros XX segundos a la primera medición"), podemos ir pulsando en el botón "refrescar" de nuestro navegador hasta que ese tiempo llegue a `0` y se produzca la primera lectura.
 6. Si todo ha ido bien deberíamos ver una tabla similar a esta:
 
@@ -190,6 +180,7 @@ Estos servicios son:
 Tenemos que registrar nuestro sensor en cada uno de estos servicios.
 
 ===== Registro en Sensor.Community
+
 Sensor.Community -antes llamada luftdaten.info- es un proyecto creado por OK Lab Stuttgart para promover el desarrollo transparente, los datos abiertos y la ciencia ciudadana.
 
 Para registrar nuestro sensor primero tenemos que registrar una cuenta en este sencillo formulario: https://my.luftdaten.info/register[window="_blank"].
@@ -239,6 +230,7 @@ A partir de este momento nuestro sensor ha quedado registrado en Sensor.Communit
 
 
 ===== Registro en Naturbana
+
 [red yellow-background]#TBD#
 
 ==== Caja de protección
@@ -259,7 +251,6 @@ Para ello vamos a meterlo en un caja construida con 2 codos de tubería, siguien
 
 ==== Solucionar problemas
 
-
 * No encuentro ninguna señal wifi que se llame "Naturbana-xxxxxx"
 ** Asegurate que el microcontrolador esta bien enchufado a la fuente de alimentación y esta a su vez enchufada.
 * No me aparecen los datos de los sensores en la página "Datos actuales"
@@ -269,7 +260,6 @@ Para ello vamos a meterlo en un caja construida con 2 codos de tubería, siguien
 ** Si sigue sin funcionar prueba instalar el sensor en otro lugar con mejor cobertura WiFi.
 
 === Colocación
-
 
 Debemos conectar Sensator en un lugar que cumpla los siguientes requisitos:
 
@@ -281,11 +271,9 @@ Por ejemplo, una ventana que tenga rejas, ya que podemos usar las bridas incluid
 
 == Cómo consultar las mediciones
 
-
 Ahora que ya tenemos nuestro sensor de partículas funcionando vamos a ver como acceder a los datos que está recogiendo.
 
 === Desde Sensor.Community
-
 
 La web de Sensor.Community nos permite ver los datos en el Mapa, y en la session My Sensors de nuestro area personal.
 Además nos podemos descargar esa información en formato `csv` desde la dirección +\https://archive.luftdaten.info/YYYY-MM-DD/YYYY-MM-DD_{modelo_de_sensor}_sensor_{id_del_sensor}.csv+
@@ -294,10 +282,8 @@ Por ejemplo: https://archive.luftdaten.info/2020-03-13/2020-03-13_sds011_sensor_
 
 === Desde Naturbana
 
-
 [red yellow-background]#TBD#
 
 == Preguntas frecuentes
-
 
 [red yellow-background]#TBD#
