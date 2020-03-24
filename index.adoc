@@ -146,8 +146,8 @@ Para ello vamos a seguir los siguientes pasos:
 5. Si pulsamos en "Datos actuales" veremos un texto indicando cuanto tiempo falta para la primera lectura de datos ("Otros XX segundos a la primera medición"), podemos ir pulsando en el botón "refrescar" de nuestro navegador hasta que ese tiempo llegue a `0` y se produzca la primera lectura.
 6. Si todo ha ido bien deberíamos ver una tabla similar a esta:
 
-[options="header", cols="<m,<,>m", width="50%", align="center"]
-|=============================================
+[options="header", cols="<m,<m,>m", width="50%", align="center"]
+|============================================
 |  Sensor  |  Parámetro          |   Valor
 3+^|
 | SDS011   | PM2.5               | 33.1 µg/m³
@@ -160,7 +160,7 @@ Para ello vamos a seguir los siguientes pasos:
 | WiFi     | Intensidad de Señal |    -69 dBm
 | WiFi     | Calidad de Señal    |       62 %
 3+^|
-|=============================================
+|============================================
 
 Cada 145 segundos nuestro sensor realizara una nueva medición.
 
